@@ -1,0 +1,13 @@
+L: menggantikan Product sebagai abstract class
+O: field dari Product dijadikan protected agar "open for extension", yaitu bisa dipakai oleh kelas turunan
+S: hal-hal terkait shopping cart pada Product dipindahkan menjadi class ShoppingCart
+L: mengimplementasikan ShoppingCart sebagai list of Product, yaitu base class dari produk-produk
+S, D: (
+    membuat PaymentProcessor sebagai interface yang diimplementasikan oleh CashPayment, CreditPayment, DebitPayment;
+    menambah argumen pada ctor Order;
+ )
+
+
+//hal lain
+feat: menambah setPaymentMethod pada Order;
+fix: hitung tax untuk shopping cart;
